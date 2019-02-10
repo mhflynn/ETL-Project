@@ -1,11 +1,9 @@
-drop database mortality;
+-- Create database if not already created, ETL project assumes db exists
 
-create database mortality;
-
-
-use mortality;
-
--- ---------------- This is the ouput form python ------------------------------------
+CREATE SCHEMA IF NOT EXISTS mortality DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE mortality;
+-- ----- ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------
+-- ---------------- This is the ouput form python to create tables : ------------------------------------
 
 CREATE TABLE  IF NOT EXISTS age_recode_52( 
 ckey VARCHAR(255) NOT NULL PRIMARY KEY, 
@@ -36,11 +34,10 @@ fk_infant_age_recode_22 VARCHAR(255) DEFAULT '',
 	CONSTRAINT cfk_infant_age_recode_22 FOREIGN KEY (fk_infant_age_recode_22) REFERENCES infant_age_recode_22(ckey) ON DELETE NO ACTION ON UPDATE CASCADE);
 
 -- ----- ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------
--- This query for exrernal MySQL USER with no acces to data files
-
+-- This query for external db connection with no acces to data files
+-- to retrieve tmapped results 
 -- ----- ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------ ------------------------------------
 
--- QUERY TO RETURN MAPPED COLUMNS:
 SELECT p.id, ar52.cvalue AS 'RECODE 52', ar27.cvalue AS 'RECODE 27', ar12.cvalue AS 'RECODE 12', iar22.cvalue AS 'INFANT RECODE 22'
 	FROM person AS p 
 		LEFT JOIN age_recode_52 AS ar52 ON p.fk_age_recode_52 = ar52.ckey
