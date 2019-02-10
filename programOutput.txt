@@ -1,0 +1,69 @@
+python Mortality_ETL.py 
+
+
+EXTRACT ...
+Read JSON files ...
+Read data files ...
+
+TRANSFORM ...
+Check data prior to clean operation ...
+Clean the data ...
+
+LOAD ...
+Create tables ...
+Populate the tables
+Insert from 0, 49999 : 1 secs
+Insert from 50000, 99999 : 2 secs
+Insert from 100000, 149999 : 3 secs
+Insert from 150000, 199999 : 4 secs
+Insert from 200000, 249999 : 5 secs
+Insert from 250000, 299999 : 6 secs
+Insert from 300000, 349999 : 7 secs
+Insert from 350000, 399999 : 9 secs
+Insert from 400000, 449999 : 10 secs
+Insert from 450000, 499999 : 11 secs
+Insert from 500000, 549999 : 12 secs
+Insert from 550000, 599999 : 13 secs
+Insert from 600000, 649999 : 14 secs
+Insert from 650000, 699999 : 15 secs
+Insert from 700000, 749999 : 16 secs
+Insert from 750000, 799999 : 18 secs
+Insert from 800000, 849999 : 19 secs
+Insert from 850000, 899999 : 20 secs
+Insert from 900000, 949999 : 21 secs
+Insert from 950000, 999999 : 22 secs
+Insert from 1000000, 1049999 : 23 secs
+Insert from 1050000, 1099999 : 24 secs
+Insert from 1100000, 1149999 : 25 secs
+Insert from 1150000, 1199999 : 27 secs
+Insert from 1200000, 1249999 : 28 secs
+Insert from 1250000, 1299999 : 29 secs
+Insert from 1300000, 1349999 : 30 secs
+Insert from 1350000, 1399999 : 31 secs
+Insert from 1400000, 1449999 : 32 secs
+Insert from 1450000, 1499999 : 33 secs
+Insert from 1500000, 1549999 : 35 secs
+Insert from 1550000, 1599999 : 36 secs
+Insert from 1600000, 1649999 : 37 secs
+Insert from 1650000, 1699999 : 38 secs
+Insert from 1700000, 1749999 : 39 secs
+Insert from 1750000, 1799999 : 40 secs
+Insert from 1800000, 1849999 : 41 secs
+Insert from 1850000, 1899999 : 43 secs
+Insert from 1900000, 1949999 : 44 secs
+Insert from 1950000, 1999999 : 45 secs
+Insert from 2000000, 2049999 : 46 secs
+Insert from 2050000, 2099999 : 47 secs
+Insert from 2100000, 2149999 : 48 secs
+Insert from 2150000, 2199999 : 49 secs
+Insert from 2200000, 2249999 : 51 secs
+Insert from 2250000, 2299999 : 52 secs
+Insert from 2300000, 2349999 : 53 secs
+Insert from 2350000, 2399999 : 54 secs
+Insert from 2400000, 2449999 : 55 secs
+Insert from 2450000, 2499999 : 56 secs
+Insert from 2500000, 2549999 : 57 secs
+Insert from 2550000, 2599999 : 59 secs
+Insert from 2600000, 2649999 : 60 secs
+Insert from 2650000, 2699999 : 61 secs
+Insert from 2700000, 2749999 : 61 secs
